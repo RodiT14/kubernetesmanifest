@@ -13,10 +13,10 @@ node {
                     withCredentials([usernamePassword(credentialsId: 'github', passwordVariable: 'GIT_PASSWORD', usernameVariable: 'GIT_USERNAME')]) {
                         //def encodedPassword = URLEncoder.encode("$GIT_PASSWORD",'UTF-8')
                         sh "git config user.email gurmelsingh.sapra@gmail.com"
-                        sh "git config user.name gurmel"
+                        sh "git config user.name gurmelsapra"
                         //sh "git switch master"
                         sh "cat deployment.yaml"
-                        sh "sed -i 's+gurmel/test.*+gurmel/test:${DOCKERTAG}+g' deployment.yaml"
+                        sh "sed -i 's+gurmelsapra/test.*+gurmelsapra/test:${DOCKERTAG}+g' deployment.yaml"
                         sh "cat deployment.yaml"
                         sh "git add ."
                         sh "git commit -m 'Done by Jenkins Job changemanifest: ${env.BUILD_NUMBER}'"
