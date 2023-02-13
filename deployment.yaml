@@ -18,7 +18,7 @@ spec:
         app: flaskdemo
     spec:
       containers:
-      - image: https://eu.gcr.io/pipeline-377312/singh@sha256:cefcf12acbb4a641ce536240bbb77220295d1a6e6626be263c3618c6b9cf5c28:40
+      - image: eu.gcr.io/pipeline-377312/singh:40
         name: cefcf12acbb4
         resources: {}
 status: {}
