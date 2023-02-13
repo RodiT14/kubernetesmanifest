@@ -18,7 +18,7 @@ spec:
         app: flaskdemo
     spec:
       containers:
-      - image: gurmel/test:lastest
+      - image: d482208e2578:lastest
         name: flaskdemo
         resources: {}
 status: {}
