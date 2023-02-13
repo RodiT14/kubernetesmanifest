@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
       - image: eu.gcr.io/pipeline-377312/singh:lastest
-        name: 0631bc837696
+        name: 0631bc837696:46
         resources: {}
 status: {}
 ---
